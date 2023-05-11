@@ -1,0 +1,11 @@
+digraph G {
+"single_rrbot_link3" -> "single_rrbot_camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"single_rrbot_link2" -> "single_rrbot_link3"[label=" Broadcaster: default_authority\nAverage rate: 16.877\nBuffer length: 4.562\nMost recent transform: 1683735123.200735\nOldest transform: 1683735118.638239\n"];
+"world" -> "single_rrbot_link1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"single_rrbot_link3" -> "single_rrbot_hokuyo_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"single_rrbot_link1" -> "single_rrbot_link2"[label=" Broadcaster: default_authority\nAverage rate: 16.877\nBuffer length: 4.562\nMost recent transform: 1683735123.200735\nOldest transform: 1683735118.638239\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1683735123.2228076"[ shape=plaintext ] ;
+}->"world";
+}
